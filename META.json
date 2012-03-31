@@ -54,7 +54,7 @@
    "provides" : {
       "Perl::Tidy::Komodo" : {
          "file" : "lib/Perl/Tidy/Komodo.pm",
-         "version" : "0.000001"
+         "version" : "1.120910"
       }
    },
    "release_status" : "stable",
@@ -70,6 +70,6 @@
          "web" : "https://github.com/wchristian/perl-tidy-komodo"
       }
    },
-   "version" : "0.000001"
+   "version" : "1.120910"
 }
 

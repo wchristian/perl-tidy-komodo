@@ -4,7 +4,7 @@ Perl::Tidy::Komodo - tidy perl files in Komodo with a project rc
 
 =head1 VERSION
 
-version 0.000001
+version 1.120910
 
 =head1 METHODS
 
