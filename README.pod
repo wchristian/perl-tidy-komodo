@@ -1,10 +1,18 @@
 =head1 NAME
 
-Perl::Tidy::Komodo
+Perl::Tidy::Komodo - tidy perl files in Komodo with a project rc
 
 =head1 VERSION
 
 version 0.000001
+
+=head1 METHODS
+
+=head2 run
+
+Tries to find a directory that looks like a project directory, upwards
+from CWD and stores its path in $ENV{PERLTIDY}. Then Perl::Tidy itself is
+run.
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
@@ -31,6 +39,7 @@ Christian Walde <walde.christian@googlemail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
+
 Christian Walde has dedicated the work to the Commons by waiving all of his
 or her rights to the work worldwide under copyright law and all related or
 neighboring legal rights he or she had in the work, to the extent allowable by
@@ -38,3 +47,4 @@ law.
 
 Works under CC0 do not require attribution. When citing the work, you should
 not imply endorsement by the author.
+

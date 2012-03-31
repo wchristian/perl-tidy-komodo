@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+use strictures;
+
+package perltidy_ko;
+
+# VERSION
+
+# ABSTRACT: tidy perl files in Komodo with a project rc
+
+# COPYRIGHT
+
+=head1 DESCRIPTION
+
+Define this script as a formatter in your Komodo preferences. Perl::Tidy
+will then use either .perltidyrc in the same directory as the currently
+open file, or if that does not exist, walk up the directories until it
+finds a .perltidyrc in a directory that also contains a lib directory and
+use that, or if that does not exist defer to Perl::Tidy's inbuilt search
+algorithms.
+
+=cut
+
+use Perl::Tidy::Komodo;
+
+Perl::Tidy::Komodo->run;
