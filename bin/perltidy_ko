@@ -18,6 +18,56 @@ finds a .perltidyrc in a directory that also contains a lib directory and
 use that, or if that does not exist defer to Perl::Tidy's inbuilt search
 algorithms.
 
+=head1 CONFIGURATION
+
+To define this script as a formatter in Komodo, follow these steps. (The guide
+is made for Komodo 7, it might differ slightly in your case.)
+
+=over
+
+=item 1. open Komodo's preferences window
+
+=begin html
+
+<img src="http://wchristian.github.io/perl-tidy-komodo/1.png" alt="a screenshot of the komdo 7 preferences window" />
+
+=end html
+
+=item 2. click on 'Formatters' on the left-hand side
+
+=item 3. click on the green 'Plus' button to add a new formatter
+
+=begin html
+
+<img src="http://wchristian.github.io/perl-tidy-komodo/2.png" alt="a screenshot of the komdo 7 'add a formatter' window" />
+
+=end html
+
+=item 4. type in or select the following:
+
+=over
+
+=item a) a unique name for your formatter, e.g. "Perltidy"
+
+=item b) the language for the formatter, i.e. "Perl"
+
+=item c) the type of formatter, i.e. "Generic command-line formatter"
+
+=item d) the executable name to use, i.e. "perltidy_ko"
+
+=back
+
+Perl::Tidy::Komodo does not need any command line arguments, since those should
+be set in .perltidyrc either in the project directory, above it, or in the user
+home directory.
+
+=item 5. click "OK" in both windows to save
+
+=item 6. to run perltidy on an open file or a selection, use the right-click
+menu, or define a short-cut, i recommend ctrl+e
+
+=back
+
 =cut
 
 use Perl::Tidy::Komodo;

@@ -11,6 +11,11 @@ package Perl::Tidy::Komodo;
 use Perl::Tidy;
 use File::chdir;
 
+=head1 DESCRIPTION
+
+This file provides the functionality behind a command line script. For
+usage documentation, please see: L<perltidy_ko>.
+
 =head1 METHODS
 
 =head2 run
